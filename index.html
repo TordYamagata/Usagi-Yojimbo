@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151a18">
+
+  <meta
+    name="description"
+    content="Conheça o mundo de Usagi Yojimbo: a jornada de Miyamoto Usagi, seus aliados, rivais e curiosidades sobre a obra de Stan Sakai."
+  >
+
+  <title>USAGI YOJIMBO — O Caminho do Rōnin</title>
+
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@400;600;700;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- BARRA DE PROGRESSO -->
+  <div class="progress" id="progress"></div>
+
+  <!-- =====================================
+       CABEÇALHO
+  ====================================== -->
+
+  <header class="header" id="topo">
+
+    <a class="brand" href="#inicio" aria-label="Usagi Yojimbo, início">
+      <span class="brand-mark">兎</span>
+
+      <span>
+        USAGI<span class="brand-accent">.</span>
+        <small>YOJIMBO ARCHIVES</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navegação principal">
+      <a href="#historia">A HISTÓRIA</a>
+      <a href="#universo">O UNIVERSO</a>
+      <a href="#personagens">PERSONAGENS</a>
+      <a href="#curiosidades">CURIOSIDADES</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button
+        id="themeBtn"
+        class="icon-btn"
+        aria-label="Alternar tema"
+        title="Alternar tema"
+        type="button"
+      >
+        ☼
+      </button>
+
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- =====================================
+         PÁGINA INICIAL
+    ====================================== -->
+
+    <section class="hero" id="inicio">
+
+      <div class="hero-atmosphere" aria-hidden="true">
+        <span class="mountain mountain-one"></span>
+        <span class="mountain mountain-two"></span>
+      </div>
+
+      <div class="hero-content container">
+
+        <div class="hero-copy reveal">
+
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span>
+            UMA LENDA DOS QUADRINHOS · DESDE 1984
+          </div>
+
+          <p class="hero-jp" lang="ja">
+            兎用心棒
+          </p>
+
+          <h1>
+            O CAMINHO<br>
+            DO <em>RŌNIN.</em>
+          </h1>
+
+          <p class="hero-description">
+            Um coelho samurai. Um Japão de lendas.
+            Uma jornada onde a honra vale mais do que
+            qualquer espada.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a class="btn btn-primary" href="#historia">
+              EXPLORAR A LENDA
+              <span>↗</span>
+            </a>
+
+            <a class="btn btn-outline" href="#personagens">
+              CONHEÇA OS PERSONAGENS
+              <span>→</span>
+            </a>
+
+          </div>
+
+          <div class="hero-credit">
+            CRIADO, ESCRITO E DESENHADO POR
+            <strong>STAN SAKAI</strong>
+          </div>
+
+        </div>
+
+        <!-- IMAGEM PRINCIPAL CIRCULAR -->
+
+        <div class="hero-art">
+
+          <div class="hero-circle">
+
+            <img
+              src="https://i.pinimg.com/736x/c8/01/a9/c801a9def4d35c41fe9dae5f41d2fec3.jpg"
+              alt="Usagi Yojimbo"
+              class="hero-imagem"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-footer">
+        <span>01 / A LENDA COMEÇA</span>
+        <span>ROLE PARA EXPLORAR ↓</span>
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         HISTÓRIA
+    ====================================== -->
+
+    <section class="intro section container" id="historia">
+
+      <div class="section-kicker">
+        01 — O GUERREIRO SEM MESTRE
+      </div>
+
+      <div class="intro-layout">
+
+        <div class="intro-heading reveal">
+
+          <span class="vertical-jp" lang="ja">
+            武士道
+          </span>
+
+          <h2>
+            UM SAMURAI.<br>
+            <em>INFINITAS</em><br>
+            HISTÓRIAS.
+          </h2>
+
+        </div>
+
+        <div class="intro-text reveal">
+
+          <p class="lead">
+            Seu nome é <strong>Miyamoto Usagi.</strong>
+            Um guerreiro que perdeu seu senhor e agora
+            percorre o Japão como um <i>rōnin</i> —
+            um samurai sem mestre.
+          </p>
+
+          <p>
+            Após a batalha de Adachigahara, Usagi escolhe
+            seguir o caminho da espada e do autoconhecimento.
+            Em suas viagens, encontra pessoas comuns,
+            guerreiros lendários, mistérios sobrenaturais
+            e dilemas em que fazer o certo nem sempre
+            significa vencer.
+          </p>
+
+          <p>
+            Criada por <strong>Stan Sakai</strong>, a série
+            combina ação, humor, emoção e referências
+            à história e à cultura japonesas.
+          </p>
+
+          <div class="stats">
+
+            <div>
+              <strong>1984</strong>
+              <span>INÍCIO DA SÉRIE</span>
+            </div>
+
+            <div>
+              <strong>40+</strong>
+              <span>ANOS DE HISTÓRIAS</span>
+            </div>
+
+            <div>
+              <strong>侍</strong>
+              <span>ESPÍRITO SAMURAI</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         CITAÇÃO
+    ====================================== -->
+
+    <section class="quote-section">
+
+      <div class="container quote-inner">
+
+        <span class="quote-kanji" lang="ja">
+          義
+        </span>
+
+        <div>
+
+          <div class="section-kicker">
+            O ESPÍRITO DO BUSHIDŌ
+          </div>
+
+          <blockquote>
+            “A honra não está na espada que você carrega,
+            mas nas escolhas que faz.”
+          </blockquote>
+
+          <p>
+            UMA REFLEXÃO INSPIRADA NOS TEMAS DA OBRA —
+            NÃO É UMA CITAÇÃO DOS QUADRINHOS.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         O UNIVERSO
+    ====================================== -->
+
+    <section class="world section container" id="universo">
+
+      <div class="section-kicker">
+        02 — O MUNDO ALÉM DA ESPADA
+      </div>
+
+      <div class="section-top">
+
+        <h2>
+          ENTRE A HISTÓRIA<br>
+          E O <em>MITO.</em>
+        </h2>
+
+        <p>
+          Um universo inspirado no Japão do início
+          do período Edo, habitado por animais
+          antropomórficos, senhores feudais,
+          ninjas, espíritos e guerreiros errantes.
+        </p>
+
+      </div>
+
+      <div class="world-grid">
+
+        <!-- CARD 01: JAPÃO FEUDAL -->
+
+        <article class="world-card reveal">
+
+          <span class="world-number">
+            01 /
+          </span>
+
+          <div class="universo-imagem">
+
+            <img
+              src="https://i.pinimg.com/736x/80/a6/14/80a614211ac231aa74ec7a43f100d8f7.jpg"
+              alt="japão feudal com castelos, vilas e samurais"
+              loading="lazy"
+            >
+
+          </div>
+
+          <h3>JAPÃO FEUDAL</h3>
+
+          <p>
+            Vilas, castelos, estradas e clãs em disputa
+            formam o cenário das aventuras de Usagi.
+          </p>
+
+        </article>
+
+        <!-- CARD 02: BUSHIDŌ -->
+
+        <article class="world-card reveal">
+
+          <span class="world-number">
+            02 /
+          </span>
+
+          <div class="universo-imagem">
+
+            <img
+              src="https://i.pinimg.com/736x/65/b8/f7/65b8f7baa775956c0f349585562b7ebf.jpg"
+              alt="Samurai representando o código Bushidō"
+              loading="lazy"
+            >
+
+          </div>
+
+          <h3>BUSHIDŌ</h3>
+
+          <p>
+            Lealdade, dever, compaixão e disciplina
+            entram em conflito nas decisões
+            dos personagens.
+          </p>
+
+        </article>
+
+        <!-- CARD 03: LENDAS E YŌKAI -->
+
+        <article class="world-card reveal">
+
+          <span class="world-number">
+            03 /
+          </span>
+
+          <div class="universo-imagem">
+
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9OQBH96AuvOTFPXKGyf5_sxcYAyEnaQgKr7ibnAHRhZN9-uzHHSJzIg&s=10"
+              alt="Criaturas e espíritos do folclore japonês"
+              loading="lazy"
+            >
+
+          </div>
+
+          <h3>LENDAS E YŌKAI</h3>
+
+          <p>
+            O sobrenatural convive com o cotidiano
+            em encontros com espíritos, criaturas
+            e maldições.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         PERSONAGENS
+    ====================================== -->
+
+    <section class="characters-section section" id="personagens">
+
+      <div class="container">
+
+        <div class="section-kicker">
+          03 — AMIGOS, RIVAIS E INIMIGOS
+        </div>
+
+        <div class="section-top">
+
+          <h2>
+            ROSTOS DE<br>
+            UMA <em>LENDA.</em>
+          </h2>
+
+          <p>
+            Um mundo feito de encontros.
+            Explore as figuras que cruzam
+            o caminho do samurai errante.
+          </p>
+
+        </div>
+
+        <!-- FILTROS DOS PERSONAGENS -->
+
+        <div class="filters" aria-label="Filtrar personagens">
+
+          <button
+            class="filter active"
+            data-filter="todos"
+            aria-pressed="true"
+            type="button"
+          >
+            TODOS
+          </button>
+
+          <button
+            class="filter"
+            data-filter="aliados"
+            aria-pressed="false"
+            type="button"
+          >
+            ALIADOS
+          </button>
+
+          <button
+            class="filter"
+            data-filter="rivais"
+            aria-pressed="false"
+            type="button"
+          >
+            RIVAIS & AMEAÇAS
+          </button>
+
+        </div>
+
+        <!-- PERSONAGENS INSERIDOS PELO JAVASCRIPT -->
+
+        <div
+          class="character-grid"
+          id="characterGrid"
+        ></div>
+
+        <p class="character-hint">
+          SELECIONE UM PERSONAGEM PARA DESCOBRIR MAIS
+          <span>↗</span>
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         LINHA DO TEMPO
+    ====================================== -->
+
+    <section class="timeline section container">
+
+      <div class="section-kicker">
+        04 — A TRAJETÓRIA
+      </div>
+
+      <div class="section-top">
+
+        <h2>
+          UMA OBRA QUE<br>
+          <em>ATRAVESSA</em> ERAS.
+        </h2>
+
+      </div>
+
+      <div class="timeline-list">
+
+        <!-- 1984 -->
+
+        <div class="timeline-item reveal">
+
+          <span>1984</span>
+
+          <div>
+
+            <h3>NASCE UM RŌNIN</h3>
+
+            <p>
+              Usagi começa sua jornada nos quadrinhos,
+              após estrear em
+              <i>Albedo Anthropomorphics</i> nº 2.
+            </p>
+
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+        <!-- 1987 -->
+
+        <div class="timeline-item reveal">
+
+          <span>1987</span>
+
+          <div>
+
+            <h3>SUA PRÓPRIA SÉRIE</h3>
+
+            <p>
+              O personagem conquista uma revista própria,
+              expandindo seu universo e seus personagens.
+            </p>
+
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+        <!-- CROSSOVERS -->
+
+        <div class="timeline-item reveal">
+
+          <span>ANOS 1980–2000</span>
+
+          <div>
+
+            <h3>ENCONTROS INESPERADOS</h3>
+
+            <p>
+              Cruzamentos com as Tartarugas Ninja
+              apresentam Usagi a novos públicos.
+            </p>
+
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+        <!-- 2022 -->
+
+        <div class="timeline-item reveal">
+
+          <span>2022</span>
+
+          <div>
+
+            <h3>UMA NOVA GERAÇÃO</h3>
+
+            <p>
+              <i>Samurai Rabbit: The Usagi Chronicles</i>
+              estreia na Netflix com um descendente
+              futurista de Usagi.
+            </p>
+
+          </div>
+
+          <b>↗</b>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         CURIOSIDADES
+    ====================================== -->
+
+    <section class="facts section" id="curiosidades">
+
+      <div class="container">
+
+        <div class="section-kicker">
+          05 — DETALHES DO CAMINHO
+        </div>
+
+        <div class="section-top">
+
+          <h2>
+            VOCÊ <em>SABIA?</em>
+          </h2>
+
+          <p>
+            Pequenos fatos sobre um dos samurais
+            mais memoráveis das histórias em quadrinhos.
+          </p>
+
+        </div>
+
+        <div class="facts-grid">
+
+          <!-- CURIOSIDADE 01 -->
+
+          <button
+            class="fact-card"
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>01</span>
+
+            <h3>INSPIRAÇÃO REAL</h3>
+
+            <p>
+              Miyamoto Usagi foi inspirado em parte
+              no lendário espadachim histórico
+              Miyamoto Musashi.
+            </p>
+
+            <span class="fact-more">
+              + DESCUBRA MAIS
+            </span>
+
+            <div class="fact-extra">
+              Assim como Musashi, Usagi é um mestre
+              da espada que viaja pelo Japão
+              aprimorando sua técnica e sua visão de mundo.
+            </div>
+
+          </button>
+
+          <!-- CURIOSIDADE 02 -->
+
+          <button
+            class="fact-card"
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>02</span>
+
+            <h3>UM AMIGO DAS TARTARUGAS</h3>
+
+            <p>
+              Usagi já participou de crossovers com
+              as Teenage Mutant Ninja Turtles.
+            </p>
+
+            <span class="fact-more">
+              + DESCUBRA MAIS
+            </span>
+
+            <div class="fact-extra">
+              O coelho guerreiro fez aparições
+              nos quadrinhos e em adaptações animadas
+              das Tartarugas Ninja.
+            </div>
+
+          </button>
+
+          <!-- CURIOSIDADE 03 -->
+
+          <button
+            class="fact-card"
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>03</span>
+
+            <h3>O SIGNIFICADO DO NOME</h3>
+
+            <p>
+              Em japonês, “usagi” significa coelho
+              e “yōjinbō” significa guarda-costas.
+            </p>
+
+            <span class="fact-more">
+              + DESCUBRA MAIS
+            </span>
+
+            <div class="fact-extra">
+              O título conecta a espécie do protagonista
+              à tradição de histórias japonesas
+              sobre espadachins e protetores errantes.
+            </div>
+
+          </button>
+
+          <!-- CURIOSIDADE 04 -->
+
+          <button
+            class="fact-card"
+            type="button"
+            aria-expanded="false"
+          >
+
+            <span>04</span>
+
+            <h3>ALÉM DOS QUADRINHOS</h3>
+
+            <p>
+              O universo inspirou jogos, adaptações
+              e a série <i>Samurai Rabbit</i>.
+            </p>
+
+            <span class="fact-more">
+              + DESCUBRA MAIS
+            </span>
+
+            <div class="fact-extra">
+              <i>Samurai Rabbit: The Usagi Chronicles</i>
+              se passa no futuro e acompanha Yuichi Usagi,
+              não o Miyamoto Usagi original.
+            </div>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================
+         ENCERRAMENTO
+    ====================================== -->
+
+    <section class="closing">
+
+      <div class="container closing-inner">
+
+        <span lang="ja">道</span>
+
+        <h2>
+          A JORNADA<br>
+          <em>CONTINUA.</em>
+        </h2>
+
+        <p>
+          Toda estrada guarda uma nova história.
+        </p>
+
+        <a class="btn btn-primary" href="#inicio">
+          VOLTAR AO INÍCIO ↑
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- =====================================
+       RODAPÉ
+  ====================================== -->
+
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <div>
+
+        <strong>兎 USAGI YOJIMBO</strong>
+
+        <p>
+          Um projeto de fã, sem fins comerciais.
+          Personagens e universo © Stan Sakai /
+          Usagi Studios.
+        </p>
+
+      </div>
+
+      <div>
+
+        <a
+          href="https://www.usagiyojimbo.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SITE OFICIAL ↗
+        </a>
+
+        <a
+          href="https://en.wikipedia.org/wiki/Usagi_Yojimbo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SOBRE A OBRA ↗
+        </a>
+
+      </div>
+
+      <small>
+        FEITO COM RESPEITO À ARTE E À TRADIÇÃO.
+      </small>
+
+    </div>
+
+  </footer>
+
+  <!-- =====================================
+       MODAL DOS PERSONAGENS
+  ====================================== -->
+
+  <dialog
+    class="modal"
+    id="characterModal"
+    aria-labelledby="modalTitle"
+  >
+
+    <button
+      class="modal-close"
+      id="closeModal"
+      aria-label="Fechar detalhes"
+      type="button"
+    >
+      ✕
+    </button>
+
+    <div id="modalContent"></div>
+
+  </dialog>
+
+</body>
+</html>
